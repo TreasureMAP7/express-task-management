@@ -9,4 +9,7 @@ router.post("/", TaskController.createTask);
 router.put("/:id", TaskController.updateTask);
 router.delete("/:id", TaskController.deleteTask);
 
+router.patch("/status/:id", TaskController.updateStatus);
+router.patch("/priority/:id", TaskController.updatePriority);
+
 export default router;
